@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Mr Coffee</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="topoFixo z-depth-1">
+        <div class="valign-wrapper brown darken-1 white-text">
+            <h5 class="titulo">Mr Coffee</h5>
+            <div>
+                <i data-activates="submenu" data-gutter="5" data-contrainwidth="false" class="material-icons waves-effect waves-light waves-circle dropdown-button">more_vert</i>
+            </div>
+            <ul class="dropdown-content" id="submenu">
+                <li><a class="acao-limpar black-text">Limpar</a></li>
+            </ul>
+        </div>
+        <ul class="tabs brown">
+            <li class="tab"> <a href="#bolos" class="white-text waves-effect waves-light">Bolos</a></li>
+            <li class="tab"><a href="#bebidas" class="white-text waves-effect waves-light">Bebidas</a></li>
+        </ul>
+    </div>
+    <div class="section" id="bolos">
+        <h6 class="container brown-text">Bolos</h6>
+        <div class="collection" id="c-bolos">
+            <a class="collection-item black-text">
+                <span class="descricao">Ameixa</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Brigadeiro</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Cenoura</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Chocolate</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">ChocoLovers</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Cookies</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Doce de leite</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Floresta Negra</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Formigueiro</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Maracujá</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Ninho Trufado</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Nozes</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Prestígio</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Red Velvet</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Sensação</span>
+            </a>
+        </div>
+    </div>
+    <div class="section" id="bebidas">
+        <h6 class="container brown-text">Cafés</h6>
+        <div class="collection">
+            <a class="collection-item black-text">
+                <span class="descricao">Café Espresso</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Mocca Latte</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Capuccino</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Choco Quente</span>
+            </a>
+        </div>
+        <h6 class="container brown-text">Refrigerantes</h6>
+        <div class="collection">
+            <a class="collection-item black-text">
+                <span class="descricao">Coca-Cola</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Guaraná Antártica</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Suco de Laranja</span>
+            </a>
+        </div>
+        <h6 class="container brown-text">Sucos Naturais</h6>
+        <div class="collection">
+            <a class="collection-item black-text">
+                <span class="descricao">Laranja</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Melancia</span>
+            </a>
+            <a class="collection-item black-text">
+                <span class="descricao">Limão</span>
+            </a>
+        </div>
+    </div>
+    <div class="fixed-action-btn">
+        <a href="#confirmacao" class="btn-floating btn-large waves-effect waves-light waves-circle yellow darken-4 modal-trigger" id="confirmar">
+            <i class="material-icons">
+                    done
+                </i>
+        </a>
+    </div>
+    <div class="modal modal-fixed-footer" id="confirmacao">
+        <div class="modal-content">
+            <h5>Resumo do Pedido</h5>
+            <input type="number" placeholder="Número da Mesa" class="validate" min="1" id="numero-mesa">
+            <blockquote id="resumo">
+            </blockquote>
+        </div>
+        <div class="modal-footer">
+            <button class="btn brown darken-3 waves-effect waves-light modal-close" id="btn-pedir">Pedir</button>
+            <button class="btn-flat brown-text modal-close">Cancelar</button>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
